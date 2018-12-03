@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dennis atuti</title>
+	<link rel="icon"  href="image/icon.png">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<script type="text/javascript" src="Jquery/jquery-3.2.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("h2").slideDown(1500,function(){
+				$("p").fadeIn(1500);
+				$(".btn").fadeIn(1500);
+			});
+		});
+	</script>
+
+	<style type="text/css">
+		*{
+			padding:0;
+			margin:0;
+		}
+		body{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			/*font-family: 'Playfair Display', serif;*/
+			font-family: 'Quicksand', sans-serif;
+		}
+
+		img{
+			min-height: 100vh;
+			width: auto;
+			display: inline-block;
+			filter: brightness(1.5);
+		}
+		.container{
+			display: inline-block;
+		}
+		.container h2{
+			display: none;
+			text-align: center;
+			margin-top: 20%;
+			font-weight: bold;
+			font-size: 40px;
+			/*font-family: 'Oswald', sans-serif;*/
+		}
+		.container p{
+			display: none;
+			padding: 10px;
+			font-size: 20px;
+			font-weight: 200;
+			/*font-family: 'Source Serif Pro', serif;*/
+
+		}
+		.container input{
+			margin:5px ;
+			margin-left: 60px;
+			/*text-align: center;*/
+			border: none;
+			height: 40px;
+			width: 200px;
+			font-size: 20px;
+			/*font-family: 'Source Serif Pro', serif;*/
+		}
+		.container input:hover{
+			background: #009688;
+			color: white;
+		}
+		.btn{
+			display: none;
+		}
+		.btn a{
+			text-decoration: none;
+			display: inline-block;
+		}
+		.container .project,.container .cv{
+			color: #009688;;
+		}
+		@media only screen and (max-width: 800px) {
+			img{
+				grid-column: 1/2;
+			}
+			.container input{
+				display: inline-block;
+				margin-left: 0px;
+			}
+			.container{
+				grid-column: 1/2;
+				margin-top:-10%;
+				padding-left: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<img src="image/profile.jpg">
+	<div class="container">
+		<h2>Hi There, Am Dennis Atuti...</h2>
+		<p>I love coffee and drinks in general, combined with my curosity nature and ability to create awosome things, i have created and learnt massively about beverages, ranging from cold to hot, non-alcoholic to alcoholic and personal favorite part is presentation, this is where I make my creations beautiful while maintaing quality.</p>
+		<p>Welcome, Take a tour on my passion,discover,learn and share, all creations are made with precise quantities and strick recipe to maintain the natural taste of the ingredients.</p>
+		<p>Thanks for your time, feel free to contact me, lets create something awesome today</p>
+		<div class="btn">
+			<a href="main.html"><input type="button" class="project" value="My Creations" title="Projects"></a>
+			<a href="downloads/DennisCv.pdf"><input type="button" class="cv" value="Download" title="My CV"></a>
+		</div>
+	</div>
+</body>
+</html>
